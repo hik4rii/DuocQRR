@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end" >
+      <ion-menu-button auto-hide="true"></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="textcenter" >detalle</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- cARTA -->
+  <ion-card>
+    <img alt="Silhouette of mountains" src="{{ asignatura.imagen }}" />
+    <ion-card-header>
+      <ion-card-title>{{ asignatura.nombre }}</ion-card-title>
+      <ion-card-subtitle>Seccion : {{ asignatura.seccion }}</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Here's a small text description for the card content. Nothing more, nothing less.
+    </ion-card-content>
+    <ion-button (click)="qr()" shape="round" class="centered">QR</ion-button>
+  </ion-card>
+
+</ion-content>

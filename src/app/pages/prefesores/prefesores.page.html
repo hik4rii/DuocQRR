@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="textcenter">Profesores</ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button auto-hide="true"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <ion-list>
+    <ion-item *ngFor="let aux of listaProfesores">
+      <ion-avatar slot="end">
+        <ion-img [src]="aux.imagen" ></ion-img>
+      </ion-avatar>
+      {{ aux.nombre }}
+    </ion-item>
+  </ion-list>
+</ion-content>
